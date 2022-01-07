@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="Part104_async_vs_defer.js"></script> browser will start executing the js file and will not be able to find the html elements used inside it since browser has not moved forward to read those element  -->
+    <!-- <script src="Part104_async_vs_defer.js" async></script> Here using the keyword async browser will keep parsing the html elements in parallel with execution of this js file so no error occurs -->
+    <!-- <script src="Part104_async_vs_defer.js" defer></script> Here also parsing of html file and loading of js file will be done simultaneously so no error occurs here as well -->
+    <script src="Part107_querySelector.js" defer></script>
+    <title>My Website</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="container nav">
+            <h1 class="logo">Website</h1>
+            <ul class="nav-items"> 
+                <li class="nav-item"><a href="">Home</a></li>
+                <li class="nav-item"><a href="">Todo</a></li>
+                <li class="nav-item"><a href="">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="headline">
+            <h2 id="main-heading">Manage your tasks</h2>
+            <button class="btn btn-headline">Learn More</button>
+        </div>
+    </header>
+    <section class="section-todo container">
+        <h2>Your Plan for Today...</h2>
+        <form class="form-todo">
+            <input type="text" name="" id="" placeholder="Add Todo">
+            <input type="submit" value="Add Todo" class="btn">
+        </form>
+    </section>
+    <section class="section-signup container">
+        <h2>Sign Up</h2>
+        <form class="signup-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="about">About Yourself</label>
+                <textarea name="about" id="about" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn signup-btn">Submit</button>
+        </form>
+    </section>
+</body>
+<!-- <script src="Part104_async_vs_defer.js"></script> Here all the html elements inside this js file are known to the browser so no error occurs however it increases the time complexity-->
+</html>
