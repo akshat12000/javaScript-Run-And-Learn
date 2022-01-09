@@ -8,7 +8,7 @@
     <!-- <script src="Part104_async_vs_defer.js"></script> browser will start executing the js file and will not be able to find the html elements used inside it since browser has not moved forward to read those element  -->
     <!-- <script src="Part104_async_vs_defer.js" async></script> Here using the keyword async browser will keep parsing the html elements in parallel with execution of this js file so no error occurs -->
     <!-- <script src="Part104_async_vs_defer.js" defer></script> Here also parsing of html file and loading of js file will be done simultaneously so no error occurs here as well -->
-    <script src="Part107_querySelector.js" defer></script>
+    <script src="Part124_this_keyword_inside_eventListener_callback.js" defer></script>
     <title>My Website</title>
 </head>
 <body>
@@ -16,13 +16,13 @@
         <nav class="container nav">
             <h1 class="logo">Website</h1>
             <ul class="nav-items"> 
-                <li class="nav-item"><a href="">Home</a></li>
+                <li class="nav-item"><a href="#home">Home</a></li>
                 <li class="nav-item"><a href="">Todo</a></li>
                 <li class="nav-item"><a href="">Sign Up</a></li>
             </ul>
         </nav>
         <div class="headline">
-            <h2 id="main-heading">Manage your tasks</h2>
+            <h2 id="main-heading">Manage your tasks <span style="display: none;">Hello</span></h2>
             <button class="btn btn-headline">Learn More</button>
         </div>
     </header>
@@ -32,6 +32,15 @@
             <input type="text" name="" id="" placeholder="Add Todo">
             <input type="submit" value="Add Todo" class="btn">
         </form>
+        <ul class="todo-list">
+            <!-- <li class="first-todo">todo 1</li> uncomment this for parts before 121 -->
+            <!-- Comment out the below items for parts before 121 -->
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+        </ul>
     </section>
     <section class="section-signup container">
         <h2>Sign Up</h2>
