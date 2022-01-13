@@ -5,3 +5,5 @@
 4) Recommended text editor is Visual Studio Code.
 5) Install the live server extension for vs code and open the index.html with live server.
 6) From there open the console and start coding!
+
+Also Checkout [Python-Run-And-Learn-Series](https://github.com/akshat12000/Python-Run-And-Learn-Series)
